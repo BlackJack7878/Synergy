@@ -1,0 +1,91 @@
+.contact {
+
+	&-intro {
+		height: 330px;
+		background-image: url('../img/contact/top-bg.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	&-us {
+		padding-bottom: 80px;
+		padding-top: 30px;
+
+		&:after {
+			display: block;
+			content: '';
+			visibility: hidden;
+			clear: both;
+		}
+
+		&-col {
+			width: 45%;
+			display: inline-block;
+			text-align: left;
+			float: left;
+			padding: 0 2%;
+		}
+
+		li {
+			padding-left: 40px;
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-image: url('../img/contact/phone-icon.png');
+
+			&:last-child {
+				background-image: url('../img/contact/paper-icon.png');
+			}
+		}
+
+		h4 {
+			margin-bottom: 0;
+			margin-top: 5px;
+		}
+
+		td {
+			width: 50%;
+			text-align: left;
+		}
+
+	}
+
+	&-map {
+
+		#map {
+			height: 450px;
+			position: relative;
+		}
+
+		.content-wide {
+			position: relative;
+			z-index: 2;
+		}
+
+		&-block {
+			background-color: rgba(242, 99, 34, 0.8);
+			position: absolute;
+			left: 50px;
+			top: 170px;
+			text-align: left;
+			padding: 20px 80px 50px 70px;
+			max-width: 190px;
+			width: 100%;
+
+			h4 {
+				color: white;
+				font-weight: 300;
+				margin-bottom: 0;
+			}
+
+			span {
+				color: white;
+				font-size: 18px;
+				line-height: 34px;
+				font-family: $Poppins;
+				font-weight: 300;
+			}
+		}
+
+	}
+
+}

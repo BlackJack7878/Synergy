@@ -1,0 +1,86 @@
+.wpcf7 {
+
+	p {
+		margin: 0;
+	}
+
+	textarea, input {
+		font-size: 15px;
+		letter-spacing: 0.1px;
+		color: #656565;
+		font-family: $Raleway;
+		border: 1px solid #dddddd;
+		border-radius: 5px;
+		resize: none;
+		padding: 13px 10px;
+		outline: none;
+		margin-top: 20px;
+		width: calc(100% - 20px);
+
+		&:focus {
+			border-color: $main;
+		}
+	}
+
+	textarea {
+		max-width: 510px;
+	}
+
+	input {
+		max-width: 234px;
+	}
+
+	.en-form-row {
+		max-width: 530px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		span {
+			display: inline-block;
+		}
+
+		span:nth-child(1) {
+			margin-right: 10px;
+		}
+
+		span:nth-child(2) {
+			margin-left: 10px;
+		}
+
+	}
+
+	&-response-output {
+		border-width: 0 !important;
+		color: white;
+		background-color: #f5824e;
+		font-family: $Poppins;
+		letter-spacing: 0.2px;
+		padding: 10px 5px !important;
+		margin: 20px 0 0 0 !important;
+	}
+
+	& .invalid input, & .invalid textarea {
+		margin-top: 40px !important;
+	}
+
+	&-not-valid-tip {
+		color: white !important;
+		font-family: $Poppins;
+		text-align: center;
+		font-weight: 300;
+		position: absolute;
+		background-color: #f5824e;
+		font-size: 10px !important;
+		bottom: -14px;
+		left: 0;
+		right: 0;
+		margin: 0 !important;
+		padding: 3px 0 !important;
+	}
+
+	.your-message .wpcf7-not-valid-tip {
+		bottom: -29px;
+	}
+
+}

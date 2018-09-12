@@ -1,0 +1,86 @@
+.service {
+
+	&-intro {
+		height: 330px;
+		background-image: url('../img/services/top-bg.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+
+	&-list {
+		padding-top: 30px;
+		padding-bottom: 90px;
+
+		h4 {
+			margin-bottom: 0;
+		}
+
+		h2 {
+			margin: auto;
+			max-width: 800px;
+		}
+
+		p {
+			color: $text_light;
+		}
+
+		ul {
+			margin-top: 40px;
+
+			li {
+				max-width: 580px;
+				min-height: 60px;
+				vertical-align: middle;
+				display: flex;
+				align-items: center;
+				width: 100%;
+				padding: 20px 40px 20px 115px;
+				margin: auto;
+				margin-top: 20px;
+				font-size: 18px;
+				line-height: 30px;
+				font-family: $Raleway;
+				font-weight: 600;
+				color: $header;
+				text-align: left;
+				border-radius: 4px;
+				border: 1.5px solid #dddddd;
+				background-repeat: no-repeat;
+				background-position: 40px 30px;
+			}
+
+		}
+
+	}
+
+	&-today {
+		background-image: url('../img/services/bottom-bg.jpg');
+		background-position: center;
+		background-size: cover;
+		padding-top: 115px;
+		padding-bottom: 100px;
+
+		&-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: 1;
+		}
+
+		.content-wide {
+			position: relative;
+			z-index: 2;
+		}
+
+		h2 {
+			color: white;
+		}
+
+		.en-button {}
+
+	}
+
+}

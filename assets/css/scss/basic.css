@@ -1,0 +1,76 @@
+/* line 11, ../../../scss/basic.scss */
+body { min-width: 320px; background-color: white; }
+
+/* line 17, ../../../scss/basic.scss */
+*::selection { background: #f5824e; color: white; }
+
+/* line 23, ../../../scss/basic.scss */
+a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+
+/* line 29, ../../../scss/basic.scss */
+ul { list-style: none; margin: 0; padding: 0; }
+
+/* line 35, ../../../scss/basic.scss */
+li, td { font-family: "Poppins", sans-serif; color: #555555; font-size: 18px; line-height: 34px; font-weight: 300; }
+
+/* line 43, ../../../scss/basic.scss */
+h4 { font-size: 15px; line-height: 56px; letter-spacing: 4px; font-family: "Poppins", sans-serif; font-weight: 400; color: #f26322; text-transform: uppercase; }
+
+/* line 53, ../../../scss/basic.scss */
+h2 { font-size: 40px; line-height: 56px; font-family: "Raleway", sans-serif; font-weight: 300; color: #222222; }
+
+/* line 61, ../../../scss/basic.scss */
+p { font-size: 18px; font-family: "Poppins", sans-serif; line-height: 34px; font-weight: 300; }
+
+/* line 70, ../../../scss/basic.scss */
+.content { max-width: 1000px; width: auto; padding: 0 15px; margin: auto; text-align: center; }
+
+/* line 78, ../../../scss/basic.scss */
+.content-wide { max-width: 1200px; width: auto; padding: 0 15px; margin: auto; text-align: center; }
+
+/* line 86, ../../../scss/basic.scss */
+.en-button { display: inline-block; background-color: #f26322; color: white !important; border-radius: 5px; font-family: "Poppins", sans-serif; font-weight: 500; font-size: 18px; letter-spacing: 0.5px; padding: 14px 30px; transition: all 0.3s ease; cursor: pointer; text-transform: uppercase; }
+/* line 100, ../../../scss/basic.scss */
+.en-button:hover { background-color: #dd500f; }
+
+/* line 105, ../../../scss/basic.scss */
+.rect-bottom { position: relative; }
+/* line 108, ../../../scss/basic.scss */
+.rect-bottom:before { content: ''; position: absolute; left: 0; right: 50%; bottom: 0; height: 95px; width: 50%; background-image: url("../img/body/trin-left.png"); background-repeat: no-repeat; background-position: center bottom; background-size: 100%; z-index: 3; }
+/* line 123, ../../../scss/basic.scss */
+.rect-bottom:after { content: ''; position: absolute; right: 0; left: 50%; bottom: 0; height: 95px; width: 50%; background-image: url("../img/body/trin-right.png"); background-repeat: no-repeat; background-position: center bottom; background-size: 100%; z-index: 3; }
+
+/* line 139, ../../../scss/basic.scss */
+.rect-top { position: relative; }
+/* line 142, ../../../scss/basic.scss */
+.rect-top:before { content: ''; position: absolute; left: 0; right: 50%; top: -1px; height: 95px; width: 50%; background-image: url("../img/body/trin-left.png"); background-repeat: no-repeat; background-position: center bottom; background-size: 100%; z-index: 3; transform: rotateX(180deg); }
+/* line 158, ../../../scss/basic.scss */
+.rect-top:after { content: ''; position: absolute; right: 0; left: 50%; top: -1px; height: 95px; width: 50%; background-image: url("../img/body/trin-right.png"); background-repeat: no-repeat; background-position: center bottom; background-size: 100%; z-index: 3; transform: rotateX(180deg); }
+
+/* line 175, ../../../scss/basic.scss */
+.rect-bottom-dark { position: relative; }
+/* line 178, ../../../scss/basic.scss */
+.rect-bottom-dark:after { content: ''; position: absolute; right: 0; left: 0; bottom: -1px; height: 120px; width: 100%; background-image: url("../img/body/trin-bottom-dark.png"); background-repeat: no-repeat; background-position: center bottom; background-size: 100%; z-index: 3; }
+
+/* line 194, ../../../scss/basic.scss */
+.quote { position: fixed; display: none; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.7); z-index: 200; }
+/* line 204, ../../../scss/basic.scss */
+.quote-wrapper { height: 100%; display: flex; align-items: center; justify-content: center; }
+/* line 211, ../../../scss/basic.scss */
+.quote-box { display: inline-block; position: relative; margin: 10px; }
+/* line 216, ../../../scss/basic.scss */
+.quote-box .fa-times { color: #f26322; font-size: 20px; position: absolute; right: 5px; top: 5px; cursor: pointer; }
+/* line 224, ../../../scss/basic.scss */
+.quote-box .fa-times:hover { color: #dd500f; }
+/* line 229, ../../../scss/basic.scss */
+.quote-box form { background-color: white; padding: 10px 25px 25px 25px; border-radius: 4px; }
+/* line 234, ../../../scss/basic.scss */
+.quote-box form .your-zip { margin-right: 0 !important; width: 100%; }
+/* line 238, ../../../scss/basic.scss */
+.quote-box form .your-zip input { max-width: none; }
+/* line 241, ../../../scss/basic.scss */
+.quote-box form .your-zip input::-webkit-outer-spin-button, .quote-box form .your-zip input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+/* line 247, ../../../scss/basic.scss */
+.quote-box form .your-zip input { -moz-appearance: textfield; }
+
+@font-face { font-family: Georgia-Italic; src: local("Georgia-Italic"), url(../fonts/georgia-italic.ttf); }

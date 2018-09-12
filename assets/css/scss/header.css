@@ -1,0 +1,64 @@
+/*
+Error: Undefined variable: "$Poppins".
+        on line 2 of D:/OpenServer/domains/energy/wp-content/themes/energy/scss/header.scss
+
+1: .header {
+2: 	font-family: $Poppins;
+3: 	background-color: white;
+4: 	position: fixed;
+5: 	left: 0;
+6: 	right: 0;
+7: 	top: 0;
+
+Backtrace:
+D:/OpenServer/domains/energy/wp-content/themes/energy/scss/header.scss:2
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+org/jruby/RubyArray.java:2412:in `map'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+org/jruby/RubyArray.java:2412:in `map'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+org/jruby/RubyMethod.java:128:in `call'
+file:/D:/OpenServer/compass.app/compass-app.jar!/hook/compass_patch.rb:108:in `update_stylesheet'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+org/jruby/RubyArray.java:1613:in `each'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+D:/OpenServer/compass.app/lib/ruby/compass_1.0/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+file:/D:/OpenServer/compass.app/compass-app.jar!/app_watcher.rb:12:in `watch!'
+file:/D:/OpenServer/compass.app/compass-app.jar!/ui/tray.rb:447:in `watch'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$Poppins\".\A         on line 2 of D:/OpenServer/domains/energy/wp-content/themes/energy/scss/header.scss\A \A 1: .header {\A 2: 	font-family: $Poppins;\A 3: 	background-color: white;\A 4: 	position: fixed;\A 5: 	left: 0;\A 6: 	right: 0;\A 7: 	top: 0;"; }

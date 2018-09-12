@@ -1,0 +1,103 @@
+.testimonials {
+
+	&-intro {
+		background-image: url('../img/testimonials/top-bg.jpg');
+		background-size: cover;
+		background-position: center;
+		height: 330px;
+	}
+
+	&-reviews {
+		padding-top: 30px;
+		padding-bottom: 120px;
+		position: relative;
+
+		h4 {
+			margin-bottom: 0;
+		}
+
+		h2 {
+			margin-top: 10px;
+		}
+
+		&-list {
+			width: 100%;
+			display: flex;
+			
+			&-col {
+				width: 50%;
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				visibility: hidden;
+				clear: both;
+			}
+		}
+
+		.en-button {
+			padding: 14px 50px;
+			min-width: 194px;
+			margin-top: 20px;
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			margin-left: -147px;
+		}
+
+		&-single {
+			display: inline-block;
+			max-width: 330px;
+			width: 100%;
+			padding: 30px 20px 30px 120px;
+			text-align: left;
+			border-radius: 4px;
+			border: 1.5px solid #dddddd;
+			background-image: url('../img/testimonials/quotes.png');
+			background-repeat: no-repeat;
+			background-position: 40px 40px;
+			margin: 0 12px;
+			margin-top: 24px;
+
+			&:after {
+				display: block;
+				content: '';
+				visibility: hidden;
+				clear: both;
+			}
+
+			&-text {
+				margin-top: 0;
+				font-family: $GeorgiaItalic;
+				color: #6d6d6d;
+				line-height: 30px;
+				margin-bottom: 0;
+			}
+
+			&-author {
+				margin-top: 6px;
+				color: $text_light;
+				font-size: 16px;
+				padding-left: 23px;
+				position: relative;
+
+				&:before {
+					height: 1px;
+					width: 14px;
+					background-color: #3c3f45;
+					position: absolute;
+					left: 0;
+					top: 17px;
+					content: '';
+				}
+			}
+
+		}
+
+	}
+
+}

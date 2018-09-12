@@ -1,0 +1,262 @@
+$Poppins: 'Poppins', sans-serif;
+$Raleway: 'Raleway', sans-serif;
+$GeorgiaItalic: 'Georgia-Italic';
+
+$main: #f26322;
+$hover: #dd500f;
+$text: #333333;
+$header: #222222;
+$text_light: #555555;
+
+body {
+	min-width: 320px;
+	background-color: white;
+}
+
+* {
+	&::selection {
+		background: #f5824e;
+		color: white;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.3s ease;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li, td {
+	font-family: $Poppins;
+	color: $text_light;
+	font-size: 18px;
+	line-height: 34px;
+	font-weight: 300;
+}
+
+h4 {
+	font-size: 15px;
+	line-height: 56px;
+	letter-spacing: 4px;
+	font-family: $Poppins;
+	font-weight: 400;
+	color: $main;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 56px;
+	font-family: $Raleway;
+	font-weight: 300;
+	color: $header;
+}
+
+p {
+	font-size: 18px;
+	font-family: $Poppins;
+	line-height: 34px;
+	font-weight: 300;
+}
+
+// common styles
+
+.content {
+	max-width: 1000px;
+	width: auto;
+	padding: 0 15px;
+	margin: auto;
+	text-align: center;
+}
+
+.content-wide {
+	max-width: 1200px;
+	width: auto;
+	padding: 0 15px;
+	margin: auto;
+	text-align: center;
+}
+
+.en-button {
+	display: inline-block;
+	background-color: $main;
+	color: white !important;
+	border-radius: 5px;
+	font-family: $Poppins;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	padding: 14px 30px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: $hover;
+	}
+}
+
+.rect-bottom {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 50%;
+		bottom: 0;
+		height: 95px;
+		width: 50%;
+		background-image: url('../img/body/trin-left.png');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: 100%;
+		z-index: 3;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		left: 50%;
+		bottom: 0;
+		height: 95px;
+		width: 50%;
+		background-image: url('../img/body/trin-right.png');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: 100%;
+		z-index: 3;
+	}
+}
+
+.rect-top {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 50%;
+		top: -1px;
+		height: 95px;
+		width: 50%;
+		background-image: url('../img/body/trin-left.png');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: 100%;
+		z-index: 3;
+		transform: rotateX(180deg);
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		left: 50%;
+		top: -1px;
+		height: 95px;
+		width: 50%;
+		background-image: url('../img/body/trin-right.png');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: 100%;
+		z-index: 3;
+		transform: rotateX(180deg);
+	}
+}
+
+.rect-bottom-dark {
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: -1px;
+		height: 120px;
+		width: 100%;
+		background-image: url('../img/body/trin-bottom-dark.png');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: 100%;
+		z-index: 3;
+	}
+}
+
+.quote {
+	position: fixed;
+	display: none;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 200;
+
+	&-wrapper {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-box {
+		display: inline-block;
+		position: relative;
+		margin: 10px;
+
+		.fa-times {
+			color: $main;
+			font-size: 20px;
+			position: absolute;
+			right: 5px;
+			top: 5px;
+			cursor: pointer;
+
+			&:hover {
+				color: $hover;
+			}
+		}
+
+		form {
+			background-color: white;
+			padding: 10px 25px 25px 25px;
+			border-radius: 4px;
+
+			.your-zip {
+				margin-right: 0 !important;
+				width: 100%;
+
+				input {
+					max-width: none;
+
+					&::-webkit-outer-spin-button,
+					&::-webkit-inner-spin-button {
+						-webkit-appearance: none;
+						margin: 0;
+					}
+					
+					& {
+						-moz-appearance: textfield;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+@font-face {
+	font-family: Georgia-Italic; 
+	src: local("Georgia-Italic"),
+	url(../fonts/georgia-italic.ttf);
+}

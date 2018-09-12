@@ -1,0 +1,153 @@
+.header {
+	font-family: $Poppins;
+	background-color: white;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0 10px;
+	z-index: 50;
+
+	.fa-bars {
+		color: $main;
+		position: fixed;
+		right: 10px;
+		top: 14px;
+		font-size: 30px;
+		display: none;
+		z-index: 100;
+		cursor: pointer;
+	}
+
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1300px;
+		margin: auto;
+	}
+
+	&-col {
+		position: relative;
+
+		&:nth-child(1) {
+			padding-left: 150px;
+		}
+
+		ul {
+
+			li {
+				display: inline-block;
+				padding: 26px 12px;
+				position: relative;
+				font-weight: 700;
+
+				&.current-menu-item {
+					color: $main;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						height: 3px;
+						background-color: $main;
+					}
+
+					a {
+						color: inherit;
+					}
+				}
+
+				a {
+					color: $text;
+					transition: all 0.3s ease;
+
+					&:hover {
+						color: $main;
+					}
+				}
+			}
+
+		}
+	}
+
+	&-logo {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 130px;
+		height: 130px;
+		background-color: white;
+		border-radius: 50%;
+		text-align: center;
+
+		img {
+			position: relative;
+			top: 8px;
+		}
+	}
+
+	p {
+		color: $text;
+		display: inline-block;
+		position: relative;
+		margin-right: 20px;
+		top: 2px;
+
+		&:before {
+			width: 25px;
+			height: 25px;
+			content: '';
+			position: absolute;
+			left: -30px;
+			top: 4px;
+			background-image: url('../img/body/phone-ico.png');
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+	}
+
+	.en-button {
+		text-transform: uppercase;
+		padding: 12px 20px;
+		font-size: 13px;
+	}
+
+	&-mob {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: 60;
+
+		&-wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+
+			ul {
+				color: white;
+				text-align: center;
+
+				li {
+					color: white;
+					padding: 10px 0;
+
+					&.current-menu-item {
+						a {
+							color: $main;
+						}
+					}
+
+				}
+
+			}
+		}
+	}
+}
